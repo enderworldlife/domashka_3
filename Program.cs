@@ -58,24 +58,45 @@
 
 //zadanye 3
 
-double[] numbers = { 3.14, 2.71, 5.55, 1.23, 4.89 };
+// double[] numbers = { 3.14, 2.71, 5.55, 1.23, 4.89 };
 
-double min = numbers[0];
-double max = numbers[0];
+// double min = numbers[0];
+// double max = numbers[0];
 
-for (int i = 1; i < numbers.Length; i++){
-    if (numbers[i] < min){
-        min = numbers[i];
-    }
-    if (numbers[i] > max){
-        max = numbers[i];
-}
-}
+// for (int i = 1; i < numbers.Length; i++){
+//     if (numbers[i] < min){
+//         min = numbers[i];
+//     }
+//     if (numbers[i] > max){
+//         max = numbers[i];
+// }
 
-double difference = max - min;
+// double difference = max - min;
  
-Console.WriteLine("Massiv: " + string.Join(", ", numbers));
-Console.WriteLine("Minimalniy element: " + min);
-Console.WriteLine("Maksimalniy element: " + max);
-Console.WriteLine("Raznitsa mejdu min i maks: : " + difference);
+// Console.WriteLine("Massiv: " + string.Join(", ", numbers));
+// Console.WriteLine("Minimalniy element: " + min);
+// Console.WriteLine("Maksimalniy element: " + max);
+// Console.WriteLine("Raznitsa mejdu min i maks: : " + difference);
     
+// zadanye 4
+
+
+// Random random = new Random();
+// int chislo = random.Next(10000000);
+// Console.WriteLine("Chislo: " + chislo);
+// string tsyfra = Convert.ToString(chislo);
+// int j = 0;
+
+// int[] massiv = new int[j];
+
+// foreach (char i in tsyfra){
+//     Console.Write(i + " ");
+//     j++;
+//     // int[] massiv = new int[j]; ?
+//     for (int p = 0; p < massiv.Length; p++){
+//         massiv[p] = i;
+//     }
+// }
+// string result = string.Join(", ", massiv);
+// Console.WriteLine(result);
+
