@@ -1,36 +1,57 @@
 ﻿
-// domashka 3
+// // domashka 3
 
-// zadanye 1
+// // zadanye 1
 
-int[] ar = new int[10];
-Random random = new Random();
-for (int j = 0; j < ar.Length; j++){
-    ar[j] = random.Next(0,100);
-}
+// int[] ar = new int[10];
+// Random random = new Random();
+// for (int j = 0; j < ar.Length; j++){
+//     ar[j] = random.Next(0,100);
+// }
 
-static void ArPrint(int[] array){
-    for (int o = 0; o < array.Length; o++){
-        Console.Write(array[o] + " ");
-    }
-}
+// static void ArPrint(int[] array){
+//     for (int o = 0; o < array.Length; o++){
+//         Console.Write(array[o] + " ");
+//     }
+// }
 
-ArPrint(ar);
+// ArPrint(ar);
 
-Console.WriteLine();
+// Console.WriteLine();
 
-for (int i = 0; i < ar.Length; i++){
+// for (int i = 0; i < ar.Length; i++){
     
-    if (ar[i] > 20 && ar[i] < 80){
-        Console.Write(ar[i] + " ");
+//     if (ar[i] > 20 && ar[i] < 80){
+//         Console.Write(ar[i] + " ");
+//     }
+// }
+
+// // zadanye 2
+
+int[] numbers = new int[10];
+Random random = new Random();
+
+for (int random_number = 0; random_number < numbers.Length; random_number++){
+    numbers[random_number] = random.Next(1,9);
+}
+void PrintArray(int[] array){
+    for (int i = 0; i < array.Length; i++){
+        Console.Write(array[i] + " ");
     }
 }
-
-// zadanye 2
-
-
-
-
-
-
-
+Console.Write("Tsifry: ");
+PrintArray(numbers);
+Console.WriteLine();
+Console.Write("Chetnye tsifry: ");
+for (int chet = 0; chet < numbers.Length; chet++){
+    if (numbers[chet] % 2 == 0){
+        Console.Write(numbers[chet] + " ");
+    }
+}
+Console.WriteLine();
+Console.Write("Nechetnye tsifry: ");
+for (int nechet = 0; nechet < numbers.Length; nechet++){
+    if (numbers[nechet] % 2 != 0){
+        Console.Write(numbers[nechet] + " ");
+    }
+}
